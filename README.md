@@ -42,6 +42,8 @@ docker compose up -d --build
 
 ### 4. Initialize the Laravel application
 
+> **Important:** Wait a few seconds after step 3 before running these commands. MySQL takes a moment to finish initializing — if `migrate` fails with a connection error, just wait 5–10 seconds and run it again.
+
 ```bash
 docker compose exec app php artisan key:generate
 docker compose exec app php artisan migrate
