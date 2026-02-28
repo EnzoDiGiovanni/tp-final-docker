@@ -40,8 +40,6 @@ cp .env.example .env
 docker compose up -d --build
 ```
 
-> The first build takes several minutes — Composer dependencies and frontend assets are compiled inside the image.
-
 ### 4. Initialize the Laravel application
 
 ```bash
